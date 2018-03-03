@@ -1754,8 +1754,7 @@ _git_merge ()
 
 	case "$cur" in
 	--*)
-		__gitcomp_builtin merge "--rerere-autoupdate
-				--no-rerere-autoupdate
+		__gitcomp_builtin merge "--no-rerere-autoupdate
 				--no-commit --no-edit --no-ff
 				--no-log --no-progress
 				--no-squash --no-stat
