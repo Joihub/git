@@ -1836,6 +1836,11 @@ _git_notes ()
 	add,--reedit-message=*|append,--reedit-message=*)
 		__git_complete_refs --cur="${cur#*=}"
 		;;
+	prune,--*)
+		__gitcomp_builtin notes_prune
+		;;
+	prune,*)
+		;;
 	*,--*)
 		__gitcomp_builtin notes_$subcommand
 		;;
